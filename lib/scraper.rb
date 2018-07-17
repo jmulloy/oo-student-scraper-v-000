@@ -24,7 +24,7 @@ class Scraper
     student_profile.css(".social_icon_container a").each do |icon|
     link = icon.attr("href")
     if link.include?("twitter")
-      new_hash[:twitter]
+      new_hash[:twitter] = link
 
 
   end
