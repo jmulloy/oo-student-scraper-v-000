@@ -30,7 +30,7 @@ class Scraper
     elsif link.include?("github")
       new_hash[:github] = link
     else
-      new_hash[:]
+      new_hash[:blog] = link
 
 
   end
