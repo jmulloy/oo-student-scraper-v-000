@@ -10,14 +10,13 @@ class Scraper
     index_url.css(".student-card").map do |profile|
       {name: profile.css("h4.student-name").text,
         location: profile.css("p.student-locattion").text,
-        profile_url:
-        profile.css("a")[0]["href"]
+        profile_url: profile.css("a")[0]["href"]
       }
     end
   end
 
   def self.scrape_profile_page(profile_url)
-    
+
   end
 
 end
