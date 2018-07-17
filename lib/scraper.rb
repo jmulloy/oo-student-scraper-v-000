@@ -19,8 +19,7 @@ class Scraper
     new_hash = {}
     #twitter url, linkedin url, github url, blog url, profile quote, and bio
     student_profile= Nokogiri::HTML(open(profile_url))
-    student_profile.css(".vitals-container a").each do |link|
-      twitter:
+    
   end
 
 end
