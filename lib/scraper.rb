@@ -17,6 +17,7 @@ class Scraper
 
   def self.scrape_profile_page(profile_url)
     new_hash = []
+    index_url= Nokogiri::HTML
   end
 
 end
