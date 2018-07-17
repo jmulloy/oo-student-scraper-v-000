@@ -22,7 +22,9 @@ class Scraper
     new_hash[:profile_quote] = student_profile.css(".profile_quote").text
     new_hash[:bio] = student_profile.css(".bio-content p").text
     student_profile.css(".social_icon_container a").each do |icon|
-      icon.attr("href")
+    link = icon.attr("href")
+    if link.include?("twitter")
+      new_hash[:twitter]
 
 
   end
