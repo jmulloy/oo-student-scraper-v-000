@@ -19,7 +19,7 @@ class Scraper
     new_hash = {}
     #twitter url, linkedin url, github url, blog url, profile quote, and bio
     student_profile= Nokogiri::HTML(open(profile_url))
-    new_hash[bio: student_profile.css(".profile_quote")
+    new_hash[:bio] = student_profile.css(".profile_quote")
 
   end
 
