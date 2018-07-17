@@ -25,6 +25,12 @@ class Scraper
     link = icon.attr("href")
     if link.include?("twitter")
       new_hash[:twitter] = link
+    elsif link.include?("linkedin")
+      new_hash[:linkedin] = link
+    elsif link.include?("github")
+      new_hash[:github] = link
+    else
+      new_hash[:]
 
 
   end
