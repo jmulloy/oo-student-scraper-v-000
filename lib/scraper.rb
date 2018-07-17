@@ -9,7 +9,7 @@ class Scraper
     index_url= Nokogiri::HTML(open("./fixtures/student-site/index.html"))
     index_url.css(".student-card").map do |profile|
       {name: profile.css("h4.student-name").text,
-        location: profile.css("p.student-locattion").text,
+        location: profile.css("p.student-location").text,
         profile_url: profile.css("a")[0]["href"]
       }
     end
